@@ -49,8 +49,17 @@ Depende del ambiente en donde se encuentre trabajando puede correr el proyecto c
 
 #### Docker Installation
 
-**TO DO**
+Imagen base utilizada python:3.12.12-slim
 
+Primero construye la imagen directamente utilizando docker
+```bash
+docker build -t diemitunes-image .
+```
+
+Una vez creada la imagen se puede crear el contenedor con el siguiente comando
+```bash
+docker run -d --name diemitunes -p 8080:8000 diemitunes-image
+```
 
 ### Set Up
 
